@@ -1,0 +1,32 @@
+node_modules/
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+
+# Generated pipeline output
+artifacts/
+.frame-cache/
+assets.json
+segments.json
+timeline.json
+whisper_cache.json
+generated-timeline.fcpxml
+
+# User media copied into a video project
+assets/
+*.mp3
+*.wav
+*.m4a
+*.flac
+*.ogg
+*.aac
+*_compressed.mp3
+
+# Logs, temp files, and editor/system noise
+log/
+logs/
+tmp/
+*.log
+.DS_Store

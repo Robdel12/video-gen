@@ -1,0 +1,45 @@
+{
+  "name": "video-gen",
+  "version": "1.0.0",
+  "description": "Generate documentary-style videos from assets and voiceover",
+  "main": "src/cli.js",
+  "type": "module",
+  "bin": {
+    "video-gen": "./bin/video-gen.js"
+  },
+  "scripts": {
+    "start": "node src/cli.js",
+    "cli": "node src/cli.js",
+    "test": "node --test"
+  },
+  "files": [
+    "bin",
+    "src",
+    "README.md",
+    "LICENSE",
+    ".env.example"
+  ],
+  "keywords": [
+    "ai",
+    "video",
+    "video-editor",
+    "documentary",
+    "fcpxml",
+    "openai",
+    "automation"
+  ],
+  "author": "Robert DeLuca",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@ffprobe-installer/ffprobe": "^2.1.2",
+    "commander": "^12.1.0",
+    "dotenv": "^16.5.0",
+    "fluent-ffmpeg": "^2.1.3",
+    "openai": "^6.34.0",
+    "tmp": "^0.2.5",
+    "xmlbuilder2": "^4.0.3"
+  }
+}
