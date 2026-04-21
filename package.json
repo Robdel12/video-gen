@@ -15,6 +15,7 @@
   "files": [
     "bin",
     "src",
+    "docs",
     "README.md",
     "LICENSE",
     ".env.example"

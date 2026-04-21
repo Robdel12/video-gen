@@ -6,6 +6,24 @@ This is an old-but-fun prototype: it analyzes images and video frames, transcrib
 
 No sample media, generated artifacts, local `.env` files, or API keys are included in this repo.
 
+## The Experiment
+
+The question behind this project was pretty simple:
+
+> If I already have a narration script, an AI-generated voiceover that reads that script, and a pile of related images and videos, how close can I get to a real edited video automatically?
+
+The workflow is meant to look like this:
+
+1. Write or generate a transcript/script.
+2. Generate a voiceover from that script with text-to-speech.
+3. Collect images and video clips that fit the subject.
+4. Run the pipeline.
+5. Import the generated `.fcpxml` into Final Cut Pro.
+
+The important trick is that the voiceover becomes the timing source. The tool transcribes the voiceover back into words with timestamps, groups those words into narration segments, and then builds the visual edit around those segment timings. That gives the generated edit real pacing instead of just guessing how long each image or clip should stay on screen.
+
+For the longer version, see [Architecture](docs/ARCHITECTURE.md).
+
 ## Requirements
 
 - Node.js 20+
